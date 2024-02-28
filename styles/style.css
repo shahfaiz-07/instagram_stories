@@ -1,0 +1,140 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width:100%;
+    height: 100%;
+}
+
+#main {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(74, 84, 92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    /* border:2px solid #dadada; */
+    position: relative;
+    width:400px;
+    height: 600px;
+    background-color: #081026;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-header {
+    width: 100%;
+    border-bottom: 1px solid #dadada;
+    white-space: nowrap;
+    padding: 10px;
+    overflow-x: auto;
+}
+
+.card-header::-webkit-scrollbar {
+    display: none;
+}
+
+.stories {
+    display:inline-block;
+    width: 80px;
+    height: 80px;
+    background-color:darkmagenta;
+    border-radius: 50%;
+    margin-inline:3px;
+    overflow: hidden;
+    border:3px solid crimson;
+}
+
+.viewed-story {
+    border: 3px solid #dadada;
+}
+
+.stories > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.full-story {
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-color: #dadada8e;
+    display: none;
+    z-index: 999;
+}
+
+.full-story>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.close-story {
+    font-family: monospace;
+    line-height: 1;
+    color: #dadada;
+    background-color: black;
+    font-weight: 400;
+    position: absolute;
+    font-size: large;
+    right: 5%;
+    top: 3%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: none;
+}
+
+.story-dp {
+    border:1px solid crimson;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top:2%;
+    left:5%;
+    background-color: aqua;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 3px;
+    background-color: crimson;
+    transition: all 1s linear;
+}
+
+@media (orientation:portrait){
+    .card {
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.card-body {
+    /* background-color: aqua; */
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+    color:#dadada;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
