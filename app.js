@@ -32,6 +32,7 @@ cardHeader.addEventListener("click", (evt) => {
     }, 1000);
     timeoutId = setTimeout(() => {
         fullStoryCard.style.display = "none";
+        clearInterval(intervalId);
     }, 10000);
     loader.style.width = "100%";
     updateFeed();
